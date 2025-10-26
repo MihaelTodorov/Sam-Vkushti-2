@@ -49,6 +49,17 @@
                         int odds = nums.Count(x => x % 2 != 0);
                         Console.WriteLine($"CountOdds={odds}");
                         break;
+                    case "countevens":
+                        int evens = nums.Count(x => x % 2 == 0);
+                        Console.WriteLine($"CountEvens={evens}");
+                        break;
+                    case "sumall":
+                        int sum = nums.Sum();
+                        Console.WriteLine($"SumAll={sum}");
+                        break;
+                    default:
+                        Console.WriteLine("Unknown command!");
+                        break;
                 }
             }
         }
